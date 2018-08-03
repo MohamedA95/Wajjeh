@@ -2,15 +2,16 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#efefef"
+    android:background="#eef0f7"
     android:layout_height="match_parent">
-
 
 
     <ImageView
 
-        android:layout_width="214dp"
-        android:layout_height="400dp"
+        android:layout_width="225dp"
+        android:layout_height="425dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
         android:layout_marginTop="10dp"
         android:id="@+id/buildingImage"
         android:src="@drawable/build" />
@@ -19,19 +20,51 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="93dp"
         android:layout_toRightOf="@id/buildingImage"
-        android:background="#f00"
-        android:padding="10dp"
-        android:text="@string/crowded"
-        android:textColor="#fff"
-        android:textSize="19sp" />
+        android:id="@+id/floorOne"
+        style="@style/FlagStyle"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/buildingImage"
+        android:layout_below="@id/floorOne"
+        android:id="@+id/floorTwo"
+        style="@style/FlagStyle"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/buildingImage"
+        android:layout_below="@id/floorTwo"
+        android:id="@+id/floorThree"
+        style="@style/FlagStyle"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/buildingImage"
+        android:layout_below="@id/floorThree"
+        android:id="@+id/floorFour"
+        style="@style/FlagStyle"
+        />
 
 
 
     <RelativeLayout
         android:layout_below="@id/buildingImage"
-        android:background="#ddd"
+        android:background="#e6e8f2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -41,6 +74,7 @@
             android:gravity="center"
             android:text="status"
             android:textStyle="bold"
+            android:id="@+id/generalStatus"
             android:textSize="20sp"
             android:layout_centerVertical="true"
             android:layout_height="wrap_content" />
