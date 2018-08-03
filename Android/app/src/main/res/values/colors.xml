@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#33aff2</color>
-    <color name="colorPrimaryDark">#656f9f</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="crowdedRed">#f21633</color>
-    <color name="notCrowdedGreen">#51dc3f</color>
-</resources>
