@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wajjeh</string>
+    <string name="crowded">Crowded</string>
+    <string name="not_crowded">Safe</string>
+</resources>
